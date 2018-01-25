@@ -1,13 +1,13 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: bitcoincash
+  name: crisscoin
   namespace: default
 spec:
   scaleTargetRef:
     apiVersion: extensions/v1beta1
     kind: Deployment
-    name: bitcoincash
+    name: crisscoin
   minReplicas: 5
   maxReplicas: 10
   targetCPUUtilizationPercentage: 90
